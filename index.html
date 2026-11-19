@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Biju e cia</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header>
+    <h1>Acessórios</h1>
+  </header>
+  <main>
+    <section class="cartao">
+      <h2>Sobre este Projeto</h2>
+      <div class="area-imagem">
+        <!-- PASSO 1: Preencha o alt descrevendo a imagem para o NVDA -->
+        <img 
+          src="biju.jpg"
+          alt="Mão segurando um brinco de argola com conchas e miçangas turquesa, acompanhado de pulseiras do mesmo estilo." 
+          class="foto-destaque"
+        >
+      </div>
+      <p>Acessórios para todas as ocasiões.</p>
+      <h3>Destaques</h3>
+      <ul>
+        <li>Brincos</li>
+        <li>Colares</li>
+      </ul>
+      <form>
+        <h3>Formulário de Cadastro ou Pedido</h3>
+        <p>
+          <!-- PASSO 2 (Parte A): Adicionado o atributo required neste input -->
+          <label for="nome-usuario">Seu Nome:</label>
+          <input type="text" id="nome-usuario" minlength="3" aria-describedby="dica-nome" required>
+          <small id="dica-nome"></small>
+          
+        </p>
+        <p>
+          <!-- PASSO 3: Ligado o label ao input usando for e id -->
+          <label for="email-usuario">Seu E-mail:</label>
+          <input type="email" id="email" placeholder="EX: pri.e@gmail.com" required>
+        </p>
+        <fieldset>
+          <legend>Gostaria de receber novidades:</legend>
+          <input type="radio" id="op1" name="escolha" value="opcao1">
+          <label for="op1">sim</label><br>
+          <input type="radio" id="op2" name="escolha" value="opcao2">
+          <label for="op2">não</label>
+        </fieldset>
+        <fieldset>
+          <legend>Como deseja receber as novidades(Checkbox):</legend>
+          <input type="checkbox" id="check1" name="extras" value="item1">
+          <label for="check1">E-mail</label><br>
+          <input type="checkbox" id="check2" name="extras" value="item2">
+          <label for="check2">WhatsApp</label>
+        </fieldset>
+        <!-- PASSO 2 (Parte B): Adicionado o type="submit" no botão -->
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Exercício de Revisão - Feito em aula</p>
+  </footer>
+</body>
+</html>
